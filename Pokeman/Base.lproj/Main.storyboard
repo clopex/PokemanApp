@@ -46,7 +46,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="TL6-b5-z6Q">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="TL6-b5-z6Q" customClass="PokeCell" customModule="Pokeman" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -83,6 +83,10 @@
                                             <constraint firstAttribute="bottom" secondItem="Pfm-XC-7Pb" secondAttribute="bottom" id="xhS-Si-t9W"/>
                                             <constraint firstAttribute="trailing" secondItem="gVV-fu-Nj0" secondAttribute="trailing" id="zBH-La-jnn"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="Pfm-XC-7Pb" id="Y4t-Ey-wCA"/>
+                                            <outlet property="thumbImg" destination="gVV-fu-Nj0" id="dk8-rK-JAG"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -112,6 +116,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="collection" destination="CVQ-YN-Bng" id="HF8-pn-i4A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
