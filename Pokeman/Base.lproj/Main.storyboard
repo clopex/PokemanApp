@@ -64,8 +64,8 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="100" translatesAutoresizingMaskIntoConstraints="NO" id="gVV-fu-Nj0">
-                                                    <rect key="frame" x="0.0" y="8" width="110" height="82"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="718" translatesAutoresizingMaskIntoConstraints="NO" id="gVV-fu-Nj0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="89"/>
                                                     <animations/>
                                                 </imageView>
                                             </subviews>
@@ -76,13 +76,25 @@
                                         <color key="backgroundColor" white="1" alpha="0.70355603448275861" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="gVV-fu-Nj0" firstAttribute="leading" secondItem="TL6-b5-z6Q" secondAttribute="leading" id="1Id-5b-9hH"/>
+                                            <constraint firstItem="gVV-fu-Nj0" firstAttribute="leading" secondItem="TL6-b5-z6Q" secondAttribute="leading" id="6jd-yu-Uad"/>
                                             <constraint firstItem="Pfm-XC-7Pb" firstAttribute="leading" secondItem="TL6-b5-z6Q" secondAttribute="leading" id="7XD-Yu-cB0"/>
+                                            <constraint firstAttribute="trailing" secondItem="gVV-fu-Nj0" secondAttribute="trailing" id="7bw-db-DKB"/>
                                             <constraint firstAttribute="trailing" secondItem="Pfm-XC-7Pb" secondAttribute="trailing" id="BjY-Nn-7yk"/>
+                                            <constraint firstItem="gVV-fu-Nj0" firstAttribute="top" secondItem="TL6-b5-z6Q" secondAttribute="top" id="Kje-mi-osP"/>
+                                            <constraint firstItem="Pfm-XC-7Pb" firstAttribute="top" secondItem="gVV-fu-Nj0" secondAttribute="bottom" id="WsM-ux-JD3"/>
                                             <constraint firstItem="gVV-fu-Nj0" firstAttribute="top" secondItem="TL6-b5-z6Q" secondAttribute="top" id="X0w-jk-BJb"/>
                                             <constraint firstAttribute="bottom" secondItem="gVV-fu-Nj0" secondAttribute="bottom" id="aiC-AX-9SE"/>
                                             <constraint firstAttribute="bottom" secondItem="Pfm-XC-7Pb" secondAttribute="bottom" id="xhS-Si-t9W"/>
                                             <constraint firstAttribute="trailing" secondItem="gVV-fu-Nj0" secondAttribute="trailing" id="zBH-La-jnn"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="1Id-5b-9hH"/>
+                                                <exclude reference="X0w-jk-BJb"/>
+                                                <exclude reference="aiC-AX-9SE"/>
+                                                <exclude reference="zBH-La-jnn"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
                                             <outlet property="nameLbl" destination="Pfm-XC-7Pb" id="Y4t-Ey-wCA"/>
                                             <outlet property="thumbImg" destination="gVV-fu-Nj0" id="dk8-rK-JAG"/>
@@ -126,7 +138,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="100" width="120" height="120"/>
+        <image name="718" width="128" height="140"/>
         <image name="bg" width="1920" height="1200"/>
     </resources>
 </document>
