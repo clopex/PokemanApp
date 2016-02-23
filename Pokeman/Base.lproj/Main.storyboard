@@ -314,21 +314,21 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="M9X-eD-8e2">
                                         <rect key="frame" x="0.0" y="189" width="560" height="69"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9M7-qH-ywE">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9M7-qH-ywE">
                                                 <rect key="frame" x="0.0" y="0.0" width="43" height="69"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="0.95686274510000002" green="0.3294117647" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Grass / Psyhics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hg2-aA-Ye0">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Grass / Psyhics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hg2-aA-Ye0">
                                                 <rect key="frame" x="141" y="0.0" width="112" height="69"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Defense:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPT-3q-bfz">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Defense:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPT-3q-bfz">
                                                 <rect key="frame" x="336" y="0.0" width="72" height="69"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
@@ -444,16 +444,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="baseAttack" destination="3wG-MF-r7P" id="ska-Ka-DOR"/>
                         <outlet property="currentImg" destination="NZm-NG-gck" id="Ufi-dJ-tNB"/>
-                        <outlet property="defenseLbl" destination="tPT-3q-bfz" id="FtI-kA-abo"/>
+                        <outlet property="defenseLbl" destination="0n0-Mr-f8d" id="Mq0-is-Jz8"/>
                         <outlet property="descLbl" destination="feV-Cb-s0f" id="ehj-em-TcH"/>
                         <outlet property="evoLbl" destination="Bjy-RD-DOV" id="h2m-bw-Qt7"/>
-                        <outlet property="heightLbl" destination="T0W-8k-qs7" id="eAY-xO-t5g"/>
+                        <outlet property="heightLbl" destination="UcB-M8-2fe" id="mRd-bd-03U"/>
                         <outlet property="mainImg" destination="Klc-xk-6RD" id="tx5-u2-X7B"/>
                         <outlet property="nameLbl" destination="T3O-IY-azY" id="V1q-Qc-YUv"/>
                         <outlet property="nextImg" destination="rki-VE-W7a" id="22W-zU-6Qk"/>
-                        <outlet property="pokedexLbl" destination="Iq0-Lm-3hE" id="jfu-Jk-MmF"/>
-                        <outlet property="typeLbl" destination="9M7-qH-ywE" id="A60-QC-Ef7"/>
+                        <outlet property="pokedexLbl" destination="SkL-Bt-sC8" id="ggN-Ml-OQJ"/>
+                        <outlet property="typeLbl" destination="hg2-aA-Ye0" id="BoF-4A-WRp"/>
+                        <outlet property="wightLbl" destination="xis-AL-8oW" id="WqH-iP-VsL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hPk-3f-NLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
