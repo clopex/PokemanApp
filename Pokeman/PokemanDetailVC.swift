@@ -13,11 +13,25 @@ class PokemanDetailVC: UIViewController {
     var pokemon: Pokeman!
     
     @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var mainImg: UIImageView!
+    @IBOutlet weak var descLbl: UILabel!
+    @IBOutlet weak var typeLbl: UILabel!
+    @IBOutlet weak var defenseLbl: UILabel!
+    @IBOutlet weak var heightLbl: UILabel!
+    @IBOutlet weak var pokedexLbl: UILabel!
+    @IBOutlet weak var currentImg: UIImageView!
+    @IBOutlet weak var nextImg: UIImageView!
+    @IBOutlet weak var evoLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         nameLbl.text = pokemon.name
+        mainImg.image = UIImage(named: "\(pokemon.pokedexId)")
+        
+        pokemon.downloadPokemonDetails { () -> () in
+            //this will be called after download is done!!
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,5 +49,8 @@ class PokemanDetailVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func backBtnPressed(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }

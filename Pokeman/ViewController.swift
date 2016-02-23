@@ -105,19 +105,19 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
         }
     }
 
-    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
-        
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let poke: Pokeman!
         
         if inSeachMod {
-            poke = filterPokemon[indexPath.row]
+        poke = filterPokemon[indexPath.row]
         } else {
-            poke = pokeman[indexPath.row]
+        poke = pokeman[indexPath.row]
         }
         
+        //print(indexPath.row)
         performSegueWithIdentifier("PokemanDetailVC", sender: poke)
-        
     }
+    
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
